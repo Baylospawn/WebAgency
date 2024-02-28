@@ -1,0 +1,533 @@
+/* ~~~~All START~~~~*/
+
+*{
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+  box-sizing: border-box; /* Def la façon dont la hauteur et la largeur va être appliquée */
+}
+
+/* ~~~~ALL END~~~~*/
+
+p {
+  font-size: 18px;
+}
+
+/* .logo { 
+  position: relative;
+} */
+
+/* ~~~~HEADER START~~~~ */
+header {
+  display: flex;
+  justify-content: space-between; /*La base des bases, à mettre en relation avec le display */
+  margin: 10px 10px 10px 10px; /* Aiguille d'une montre */
+  align-items: center;
+  z-index: 10;
+}
+
+/* Styles pour la liste du menu */
+#menu ul {
+list-style: none;
+display: flex;
+}
+
+/* Styles pour les éléments de la liste du menu */
+#menu ul li {
+margin-right: 40px; /* Espace entre les éléments du menu (ajustez selon vos préférences) */
+}
+
+/* Styles pour les liens du menu */
+#menu ul li a {
+color: black; 
+text-decoration: none; 
+font-weight: bold;
+}
+/* ~~~~HEADER END~~~~ */
+
+/* ~~~~SLIDE START~~~~*/
+img {
+  width: 100%;
+}
+
+#accueil {
+  width: 100%;
+  justify-content: center;
+  position: relative; /* Définit la position relative pour la section slider */
+  color: rgb(0, 0, 0); /* Couleur du texte */
+  text-align: left;
+}
+
+.slider-1 {
+  margin: 100px auto;
+  overflow: hidden;
+  border: 1px solid #f1f1f1;
+
+}
+.slider-1 .slider {
+  animation: slider-1 12s infinite ease-in-out;
+  display: flex;
+}
+.slider-1 img {
+  background: #000;
+  flex-shrink: 0;
+  width: 100%;
+  text-align: center;
+  font-size: 45px;
+  color: #f1f1f1;
+}
+
+/* 5% par transition, nombre choisi arbitrairement.
+reste divisé par nb de pauses (28%*3)+15% */
+
+@keyframes slider-1 {
+  0%,
+  20% {
+    transform: translateX(0);
+  }
+  25%,
+  45% {
+    transform: translateX(-100%); /* Negatif pour retour vers la droite */
+  }
+  50%,
+  70% {
+    transform: translateX(-200%); /* Retour sur la première photo */
+  }
+  75%,
+  95% {
+    transform: translateX(-300%);
+  }
+  100% {
+    transform: translateX(-400%);
+  }
+}
+
+/* Styles pour la section slider styles pour le conteneur du texte */
+.txt-slide {
+  position: absolute; 
+  left: 10%; /* En fonction de la width*/
+  top: 20%;
+  color:white;
+}
+.txt-slide strong {
+  color: aqua;
+}
+/* Styles pour les titres h1 dans la section slider */
+.txt-slide h1 {
+  font-size: 36px; /* Taille de police pour les titres */
+  margin: 0px 0px 10px 0px; 
+}
+
+/* Styles pour le paragraphe p dans la section slider */
+.txt-slide p {
+  font-size: 18px; /* Taille de police pour le paragraphe */
+  margin-top: 40px;
+}
+
+/* Styles pour le bouton dans la section slider */
+.txt-slide button {
+  margin-top: 40px; /* Mettre le button en dessous */
+  background-color: #75add3;
+  color: white; /* Couleur du texte du bouton */
+  border: blue; /* Couleur de la bordure */
+  padding: 9px 11px; /* Ajoute un peu d'espace de remplissage au bouton */
+  font-size: 17px; /* Taille de police pour le bouton */
+  cursor: pointer; /* Curseur de souris sous forme de main pointer */
+  bottom: 40px;
+}
+/* Possible de mettre un order en fonction de la volonté de mettre en avant/arrière un élément */
+
+/* ~~~~SLIDE END~~~~ */
+
+
+/* ~~~~SERVICES START~~~~*/
+
+/*En tête START*/
+
+#service {
+  font-size: 42px; /* Cela définit la taille de police à 42 pixels pour les titres de niveau 2 ciblés */
+  font-weight: bold; /* Cela définit le poids de la police à "bold" (gras), rendant les titres de niveau 2 en gras */
+}
+
+.barre {
+  display: flex;
+  justify-content:center;
+  align-items: center; /* On centre l'élem */
+}
+
+h2 {
+  display: flex; /* Flexbox comme toujours */
+  justify-content: center; /* On centre l'objet h2 du service */
+  margin-top: 15px;;
+  font-size: 40px;
+}
+
+.barre .trait {
+  border-top: 2px solid grey; width: 100px;
+}
+
+.fa-circle {
+  border: 12px solid rgb(255, 255, 255);
+  border-radius: 100%;
+  color: #70abcf;
+  animation: rotate-center 2.5s linear infinite;
+}
+
+/* Les circles */
+.fa-chart-line {
+  color: #70abcf;
+  font-size: 25px;
+  position: sticky; /* collé à pos abso */
+  padding: 22%;
+  top: 3px;
+  padding-top: 20px;
+  padding-left: 20px;
+}
+.fa-boxes-stacked {
+  color: #70abcf;
+  font-size: 25px;
+  position: sticky; /* collé à pos abso */
+  padding: 22%;
+  top: 3px;
+  padding-top: 20px;
+  padding-left: 18px;
+}
+
+.fa-chart-pie {
+  color: #70abcf;
+  font-size: 25px;
+  position: sticky; /* collé à pos abso */
+  padding: 22%;
+  top: 3px;
+  padding-top: 21px;
+  padding-left: 19px;
+}
+
+.txt-services {
+  width: 50%;
+  margin: auto; 
+  text-align: center;
+  font-size: 15px;
+  padding-bottom: 10px;
+  display: block;
+  margin-top: 10px;
+}
+/* Illustration */
+.conteneur {
+  width: 100%; 
+  display: flex;
+}
+
+.illustration {
+    display: flex;
+    width: 50%;
+}
+
+@keyframes rotate-center
+{
+  0%{-webkit-transform:rotateY(0);transform:rotateY(0)}
+  100%{-webkit-transform:rotateY(360deg);transform:rotateY(360deg)}
+}
+
+/* Services corps */
+
+
+.liste-services {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  padding-bottom: 5px;
+  justify-content: center;
+}
+
+.icone-services {
+  display: flex;
+  flex-direction: row; /* Pour mettre les elements les uns à coté des autres */
+  /* margin: 30px; Mettre un Margin et padding si besoin */
+  padding: 14px;
+  align-items: center;
+  gap: 10px;
+}
+/* Animation du circle */
+.icone { /*Parent en flex */
+  display: flex;
+  padding: 5px;
+}
+.circle {
+  border: 2px solid grey;
+  width: 70px;
+  height: 70px;
+  position: relative;
+  border-radius: 100%;
+}
+.tchoupi {
+  border: 2px Solid #ffffff;
+  width: 20px;
+  height: 20px;
+  border-radius: 100%;
+  background-color: #5c9dd3;
+  position: absolute;
+  left:0;
+  right:0;
+  bottom:0;
+  margin: auto; /* Pour que le cercle reste dans le carré icone */
+  top: 0;
+  overflow: hidden;
+  animation: circle 4s linear infinite;
+}
+/* Animation linéaire, elle se déplace de la même vitesse */
+h3 {
+  font-size: 30px;
+}
+
+.descriptif {
+  font-size: 20px;
+}
+
+.design {
+  display: flex;
+  flex-direction: column; /* Les élements seront en colone (On APPLIQUE le flex aux parents des éléments) */
+  margin-left: 40px;
+}
+/* Les ronds */
+.chart, .cubes, .pie {
+  border: 2px solid lightgrey;
+  padding: 20px;
+  border-radius: 50%;
+  margin-right: 5px;
+  font-size: 20px;
+}
+
+@keyframes circle {
+    0% {
+      transform: rotate(0deg) translate(32px) rotate(0deg); 
+    }
+    100% {
+      transform: rotate(360deg) translate(32px) rotate(360deg);
+    }
+  }
+/* Rotation sur 360 degrés */
+
+/* ~~~~SERVICES END~~~~*/
+
+/* ~~~~PORTFOLIO START~~~~*/
+
+
+/* Menu du Portfolio */
+
+#menu_portfolio {
+  display: flex;
+  justify-content: center;
+  margin: 28px 0px 28px 0px;
+}
+#menu_portfolio ul {
+  text-decoration: none;
+  margin: auto;
+  display: flex;
+  text-align: center;
+}
+.nav_projet li {
+  color: black;
+  background-color: #e5e5e5;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-bottom: solid transparent;
+}
+.nav_projet li:hover{ /* Animation du portfolio */
+  background-color: #5CADD3;
+  color: white;
+  border-bottom: solid 4px #5c9dd3;
+  transform: translateY(3px);
+}
+
+#menu_portfolio ul.list_projet {
+  border-radius: 5px 5px 5px 5px;
+  background-color: #e5e5e5d3;
+}
+
+#menu_portfolio li {
+  list-style-type: none; /* On vire les Points devant la liste */
+}
+#menu_portfolio .All_Works, .Creative, .Corporate, .Portfolio {
+  width: 100px;
+}
+
+.fleche {
+  border-top: 10px solid transparent;
+}
+/* Fin de la navbar */
+
+.travaux {
+  max-width: 1440px;
+  display: flex;
+  flex-wrap: wrap; /*Permet d'aligner les images */
+  justify-content: center;
+  margin: 2% auto; /* auto permet de centrer l'élément */
+}
+.travaux figure {
+  position: relative;
+  margin: 15px;
+}
+
+.travaux img {
+  width: 330px;
+}
+
+/* figcaption */
+
+.travaux figcaption {
+  position: absolute;
+  bottom: 3px;;
+  font-size: 10px;
+  background-color: blue;
+  background-color: rgba(224, 250, 255, 0.719);
+  width: 100%;
+  padding: 10px;
+  visibility: hidden; /* cache l'img */
+} 
+
+
+.eyes {
+  position: absolute;
+  left: 275px; /* Il faut aller dans le sens inverse */
+  justify-content: space-between;
+  font-size: 40px;
+  bottom: 60px; /* Il faut aller dans le sens inverse */
+  border: 3px solid rgb(0, 0, 0);
+  border-radius: 50%;
+  color: rgb(70, 97, 248);
+  background-color: rgba(224, 250, 255, 0.719);
+  animation: eye 4s linear infinite;
+}
+
+.travaux img:hover + figcaption , .travaux figcaption:hover{
+  visibility: visible; /* montre l'img */
+}
+
+@keyframes eye {
+    0% {
+      transform: rotate(0deg)
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+}
+
+/* ~~~~PORTFOLIO END~~~~*/
+
+/* ~~~~CONTACT START~~~~*/
+
+
+#contact {
+  position: relative;
+  width: 100%;
+  height: 650px;
+  background-color: lightblue;
+  display: flex;
+  flex-direction: row; 
+}
+
+/* Coordonnées entreprise */
+
+
+/* Formulaire */
+
+iframe {
+  position: relative; /* Pour mettre la carte en arrière plan */
+  height: 100%;
+  width: 100%;
+  opacity: 0.6;
+  display: flex;
+}
+
+.formulaire {
+  background-color: rgba(240, 245, 247, 0.8);
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  width: 330px;
+  right: 232px;
+  height: 535px;
+  margin-top: 60px;
+  padding: 15px;
+}
+
+.coordonnées {
+  margin-left: 10px;
+  font-size: 13px;
+  margin-bottom: 10px;
+}
+
+h4 {
+  margin-left: -2px;
+  font-size: 25px;
+  margin-bottom: 10px
+}
+
+input {
+  width: 290px;
+  padding: 5px;
+  border: 1px solid lightgrey;
+  border-radius: 5px;
+}
+
+input::placeholder {
+  color: #5c9dd3;
+}
+
+.informations {
+  margin-bottom: 25px;
+  margin-left: 10px;
+}
+
+textarea {
+  width: 290px;
+  height: 150px;
+  padding: 5px;
+  border: 1px solid lightgrey;
+  border-radius: 5px;
+  resize: none; /*pour ne pas agrandir la page formulaire */
+} /*Je réutilise la même formule, boulot de dev lol */
+
+textarea::placeholder {
+  color: #5c9dd3;
+}
+
+.buttonfr {
+  color: white;
+  background-color: #5CADD3;
+  border-radius: 3px;
+  border-bottom: 2px solid #4494BB;
+  padding: 8px 15px;
+}
+/* Footer */
+
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 20px 0;
+  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+/* Style pour les sections du footer */
+.reseaux,
+.indexML,
+.droits,
+.liens {
+  flex-basis: 25%; /* Largeur de chaque section */
+  box-sizing: border-box;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.reseaux a,
+.indexML a,
+.liens a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 20px;
+  margin: 0 10px;
+}

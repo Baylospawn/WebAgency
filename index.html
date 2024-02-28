@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Pour indiquer au navigateur la largeur du contenu -->
+    <title>Web Agency</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./responsive.css">
+    <link rel="icon" href="./WebAgency/webagency_images/images/favicon.ico" type="image/x-icon"> <!-- Le favicon-->
+    <script src="https://kit.fontawesome.com/adf01a4b8d.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    
+    
+    <!--Meta données-->
+    <meta name="description" content="Web Agency - Votre partenaire pour la création de sites web professionnels.">
+    <meta name="keywords" content="Web Agency, site web, création de site, web design, développement web">
+    <meta name="author" content="Bernard">
+    <meta name="robots" content="index, follow">
+    <meta name="revisit-after" content="7 days">
+</head>
+
+
+<body>
+    <!--HEADER-->
+    <header> <!--class is possible-->
+        <div>
+            <a href="./index.html" class="logo"> <img src="./WebAgency/webagency_images/images/logo.png" alt="WEB AGENCY"></a>
+        </div>
+
+        <div>
+            <nav id="menu">
+                <ul>
+                    <li><a href="#accueil">Accueil</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <!--MAIN START-->
+    <main> <!-- Corps du site -->
+    <section id="accueil"> <!-- Section pour le référencement / à la place de balise générique -->
+        <div class="slider-container slider-1">
+            <div class="slider">
+                <img src="./WebAgency/webagency_images/images/slider/bg1.jpg" alt="Photo Enfant avec peinture sur les mains">
+                <img src="./WebAgency/webagency_images/images/slider/bg2.jpg" alt="Photo Enfant qui crie à travers un dictaphone">
+                <img src="./WebAgency/webagency_images/images/slider/bg1.jpg" alt="Photo Enfant avec peinture sur les mains 2">
+                <img src="./WebAgency/webagency_images/images/slider/bg2.jpg" alt="Photo Enfant qui crie à travers un dictaphone">
+                <img src="./WebAgency/webagency_images/images/slider/bg1.jpg" alt="Photo Enfant avec peinture sur les mains">
+            </div>
+            <div class="txt-slide">
+                <h1>
+                    <strong>WEBAGENCY:</strong> 
+                    L'AGENCE DE TOUS VOS PROJETS!
+                </h1>
+                <br>
+                <p>Vous avez un projet web? La Webagency vous aide à le réaliser.</p> 
+                <button>Plus d'infos</button>
+            </div>
+        </div>
+    </section>
+
+    <!--NOS SERVICES START-->
+    <section id="services"> <!-- Id est préférable pour js par la suite (Il est unique), même si class reste envisageable dans ce cas de figure -->
+            <h2>NOS SERVICES</h2>
+        <div class="barre"> 
+                <div class="trait"></div>
+                    <i class="fa-solid fa-circle fa-sm"></i>
+                <div class="trait"></div>
+        </div>
+        <p class="txt-services"> Notre mission ? Que votre site web reflète votre personnalité, votre entreprise. </p>
+        <!-- Conteneur -->
+        <div class="conteneur"> <!--Pour centrer l'ensemble des éléments ! -->
+            <div class="illustration">
+                    <img alt="image-ordi" src="/WebAgency/webagency_images/images/main-feature.png"> 
+            </div>
+            <div class="liste-services"> <!-- Utiliser plus les class de pref ! Les ID doivent être uniques -->
+                <div class="description-services"> <!-- Même class pour l'ensemble des div pour faciliter le CSS -->
+                    <div class="icone-services">
+                        <div class="icone"> 
+                            <div class="circle"> <!--On va animer par keyframe-->
+                                <i class="fa-solid fa-chart-line"></i>
+                                <div class="tchoupi"></div>
+                            </div>
+                        </div>
+                        <div class="design">
+                            <h3>UX Design</h3>
+                            <p class="descriptif"> Un site créé par nos soins à l'intention de vos utilisateurs, en tenant compte de leurs besoins, de leurs envies. </p>
+                        </div>
+                    </div>
+                    <div class="icone-services">
+                        <div class="icone">
+                            <div class="circle">
+                                <i class="fa-solid fa-boxes-stacked"></i>
+                                <div class="tchoupi"></div>
+                            </div>
+                        </div>
+                        <div class="design">
+                            <h3>UI design</h3>
+                            <p class="descriptif"> Interface intuitive, design inovant sont quelques uns de nos outils afin de rendre l'expérience de vos utilisateurs unique ! </p>
+                        </div>
+                    </div>
+                    <div class="icone-services">
+                        <div class="icone">
+                            <div class="circle">
+                                <i class="fa-solid fa-chart-pie"></i>
+                                <div class="tchoupi"></div>
+                            </div>
+                        </div>
+                        <div class="design">
+                            <h3>SEO</h3>
+                            <p class="descriptif"> Le reférencement étant essentiel pour la visibilité de votre site, nous nous engageons à réaliser cette étape pour vous, au mieux. </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+        <!-- PORTFOLIO START-->
+    <section id="portfolio">
+        <div> 
+            <h2>NOS PROJETS</h2> <!-- Récupérer le h2 pour gagner du temps-->
+            <div class="barre"> 
+                <div class="trait"></div>
+                <i class="fa-solid fa-circle fa-sm"></i>  <!--espace = nouvelle classe--> 
+            <div class="trait"></div>
+            </div>
+        </div>
+        <p class="txt-services"> Encore un doute ? <br> Regardez les projets qui font la réputation de notre agence! </p>
+        <nav id="menu_portfolio"> <!-- Possibilité de faire plus simple avec des ancres (a)-->
+            <ul class="list_projet">
+                <li>
+                    <ul class="nav_projet">
+                        <li class="All_Works">All works</li>
+                        <li class="fleche"> 
+                        </li>
+                    </ul>
+                </li>
+
+                <li>
+                    <ul class="nav_projet">
+                        <li class="Creative">Creative</li>
+                        <li class="fleche">
+                        </li>
+                    </ul>
+                </li>
+
+                <li>
+                    <ul class="nav_projet">
+                        <li class="Corporate">Corporate</li>
+                        <li class="fleche">
+                        </li>
+                    </ul>
+                </li>
+
+                <li>
+                    <ul class="nav_projet">
+                        <li class="Portfolio">Portfolio</li>
+                        <li class="fleche">
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+        <div class="travaux">
+            <figure>
+                <img src="/WebAgency/webagency_images/images/portfolio/01.jpg" alt="">
+                <figcaption> <!-- C'est une légende de l'image, en + de l'image, utilisé essentiellment articles blogs etc.-->
+                    <h3> L'intru </h3>
+                    <p> Plus besoin de chercher </p>
+                    <i class="fa-solid fa-eye eyes"></i>
+                </figcaption>
+            </figure> <!-- Un alt sert au referencement, il faut la description -->
+            <figure>
+                <img src="/WebAgency/webagency_images/images/portfolio/02.jpg" alt="">
+                <figcaption>
+                    <h3> Le Lapin</h3>
+                    <p> C'est de l'art subjectif </p>
+                    <i class="fa-solid fa-eye eyes"></i>
+                </figcaption>
+            </figure>
+            <figure>
+                <img src="/WebAgency/webagency_images/images/portfolio/03.jpg" alt="">
+                <figcaption>
+                    <h3> Pompadour</h3>
+                    <p> Pommes d'amour </p>
+                    <i class="fa-solid fa-eye eyes"></i>
+                </figcaption>
+            </figure>
+            <figure>
+                <img src="/WebAgency/webagency_images/images/portfolio/04.jpg" alt="">
+                <figcaption>
+                    <h3> Digital book </h3>
+                    <p> This is the Futur, baby ! </p>
+                    <i class="fa-solid fa-eye eyes"></i>
+                </figcaption>
+            </figure>
+            <figure>
+                <img src="/WebAgency/webagency_images/images/portfolio/05.jpg" alt="">
+                <figcaption>
+                    <h3> Shopping bags </h3>
+                    <p> Wake up, we have a city to buy </p>
+                    <i class="fa-solid fa-eye eyes"></i>
+                </figcaption>
+            </figure>
+            <figure>
+                <img src="/WebAgency/webagency_images/images/portfolio/06.jpg">
+                <figcaption>
+                    <h3> Design oriental</h3>
+                    <p> D'une originalité japonaise </p>
+                    <i class="fa-solid fa-eye eyes"></i>
+                </figcaption>
+            </figure>
+            <figure>
+                <img src="/WebAgency/webagency_images/images/portfolio/07.jpg">
+                <figcaption>
+                    <h3> La balle </h3>
+                    <p> Dépassant le mur du son </p>
+                    <i class="fa-solid fa-eye eyes"></i>
+                </figcaption>
+            </figure>
+            <figure>
+                <img src="/WebAgency/webagency_images/images/portfolio/08.jpg">
+                <figcaption>
+                    <h3> Des outils créatifs</h3>
+                    <p> Des créativités utiles </p>
+                    <i class="fa-solid fa-eye eyes"></i>
+                </figcaption>
+            </figure>
+        </div>
+    </section>
+
+    <!-- CONTACT-->
+    <section id="contact">
+        <!-- Intégration de la map grâce à la balise iframe-->
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2783.6664406346963!2d4.829621376922606!3d45.75783267108023!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47f4ea537bdc5ab3%3A0x5d9d9385f58b2047!2sPlace%20Bellecour!5e0!3m2!1sfr!2sfr!4v1692966266515!5m2!1sfr!2sfr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <!-- Formulaire -->
+        <div class="formulaire">
+            <div class="coordonnées">
+                <h4>Contact info</h4>
+                <p><strong>WebAgency SAS</strong>
+                <br> 25 rue d'Hauteville 75010 Paris
+                <br> Tel: +331020304005
+                </p>
+            </div>
+            <!-- Informations client-->
+            <form action="mapage.php" method="GET"> <!-- Pas besoin de POST sur cet exemple là -->
+                <div class="informations">
+                    <label for="name"></label>
+                    <input type="text" id="name" placeholder="Nom"> <!-- placeholder pour mettre le message à transmettre dans le formulaire-->
+                </div>
+                <div class="informations">
+                    <label for="email"></label> <!--Spécificité avec l'email-->
+                    <input type="email" id="email" placeholder="Email">
+                </div>
+                <div class="informations">
+                    <label for="sujet"></label>
+                    <input type="text" id="sujet" placeholder="Sujet">
+                </div>
+                <div class="informations">
+                    <label for="message"></label>
+                    <textarea id="message" placeholder="Votre message..."></textarea> <!-- Textarea est meilleure pour du texte long -->
+                </div>
+                    <input class="buttonfr" type="submit" value="Send Message">
+            </form>
+        </div>
+    </section>
+    </main>
+    <!--FOOTER START-->
+    <footer>
+        <div class="reseaux">
+            <p>Nos réseaux</p>
+            <a href="#"><i class="fa-brands fa-facebook"></i></a>
+            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+            <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+        </div>
+        <div class="indexML">
+            <a href="./ML/indexML.html">Mentions Légales</a>
+        </div>
+        <div class="droits">
+            <p>Copyright © 2023 WebAgency.com Tous droits réservés.</p>
+        </div>
+        <div class="liens">
+            <p>Nos supports</p>
+            <a href="#"><i class="fa-brands fa-github"></i></a>
+            <a href="#"><i class="fa-brands fa-windows"></i></a>
+            <a href="#"><i class="fa-brands fa-apple"></i></a>
+            <a href="#"><i class="fa-brands fa-linux"></i></a>
+        </div>
+    </footer>
+    <!--FOOTER END-->
+</body>
+</html>
